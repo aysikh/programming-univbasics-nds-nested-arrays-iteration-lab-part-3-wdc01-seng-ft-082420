@@ -5,12 +5,13 @@ def join_nested_strings(src)
     element_index = 0
     unwanted_strings = ""
     while element_index < src[row_index].count do
-      if src[row_index][element_index] = unwanted_strings
-        array_of_strings << src[row_index][element_index]
+      if src[row_index][element_index].length < unwanted_strings.length
+        unwanted_strings = src[row_index][element_index]
+        array_of_strings << unwanted_strings
       end
       element_index += 1 
     end
     row_index += 1
   end
-  array_of_strings
+  array_of_strings 
 end
