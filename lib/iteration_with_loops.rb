@@ -15,3 +15,4 @@ def join_nested_strings(src)
   strings < array_of_strings.join
   return strings
 end
+
